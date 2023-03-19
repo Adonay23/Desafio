@@ -1,10 +1,160 @@
 :root {
-    --font-headings: "Open Sans", "sans-serif";
-    --font-main: "Poppins", "sans-serif";
-    --Soft-orange: hsl(35, 77%, 62%);
-    --Soft-red: hsl(5, 85%, 63%);
-    --Off-white: hsl(36, 100%, 99%);
-    --Grayis-blue: hsl(233, 8%, 79%);
-    --Dark-grayish-blue: hsl(236, 13%, 42%);
-    --Very-dark-blue: hsl(240, 100%, 5%);
-  }
+  --font-headings: "Open Sans", "sans-serif";
+  --font-main: "Poppins", "sans-serif";
+  --Soft-orange: hsl(35, 77%, 62%);
+  --Soft-red: hsl(5, 85%, 63%);
+  --Off-white: hsl(36, 100%, 99%);
+  --Grayis-blue: hsl(233, 8%, 79%);
+  --Dark-grayish-blue: hsl(236, 13%, 42%);
+  --Very-dark-blue: hsl(240, 100%, 5%);
+}
+
+body {
+  font-family: var(--font-headings);
+}
+
+.container {
+  margin: auto;
+  max-width: 1300px;
+  flex: 1 1 400px;
+}
+
+h4:hover {
+  color: var(--Soft-orange);
+}
+
+.container2 {
+  margin: auto;
+  max-width: 1300px;
+  display: flex;
+  align-items: start;
+  flex: 1 1 400px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.parrafo {
+  margin: 1rem;
+  padding: 1rem;
+  color: var(--Dark-grayish-blue);
+}
+
+.nota {
+  margin: 1rem;
+  padding: 3rem;
+  margin-left: 2%;
+  color: var(--Off-white);
+  background: var(--Very-dark-blue);
+}
+
+.nota h1 {
+  color: var(--Soft-orange);
+}
+
+.nota p {
+  font-weight: 400;
+  color: var(--Dark-grayish-blue);
+}
+
+
+.image1 {
+  width: 98%;
+  margin: 0 auto;
+}
+
+.img_item {
+  width: 100px;
+
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 2% 2%;
+  margin: 1;
+  justify-content: space-evenly;
+}
+
+
+a {
+  margin: 0.3rem;
+  padding: 1vh;
+  text-decoration: none;
+  color: hsl(238, 22%, 44%);
+}
+
+a:hover {
+  color: var(--Soft-red);
+}
+
+
+.col {
+  flex: 1 0 0%;
+}
+
+
+.col-7 {
+  flex: 0 0 auto;
+  width: 58.33333333%;
+}
+
+.col-8 {
+  flex: 0 0 auto;
+  width: 66.66666667%;
+}
+
+.texto {
+  padding: 2rem;
+  margin-top: 0;
+  font-size: 55px;
+  margin-bottom: 0.1rem;
+  font-weight: 1000;
+  line-height: 1.2;
+}
+
+.item {
+  display: flex;
+  width: auto;
+}
+
+
+.item p {
+  font-weight: 1000;
+}
+
+.item p:hover {
+  color: var(--Soft-red);
+}
+
+
+.text-article {
+  margin: 1rem;
+  margin-top: -22px;
+}
+
+.text-article h2 {
+  color: var(--Grayis-blue);
+}
+
+.btn {
+  border: none;
+  border-radius: 2px;
+  padding: 1em 1.5em;
+  cursor: pointer;
+  margin-right: 10px;
+  margin-left: 30px;
+  font-size: 1, 5;
+  font-weight: 750;
+  color: var(--Off-white);
+  background-color: var(--Soft-red);
+
+}
+
+.btn:hover {
+  background: var(--Very-dark-blue);
+}
