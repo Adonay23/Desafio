@@ -16,7 +16,7 @@ body {
 .container {
   margin: auto;
   max-width: 1300px;
-  flex: 1 1 400px;
+  flex: 1 1 500px;
 }
 
 h4:hover {
@@ -28,7 +28,7 @@ h4:hover {
   max-width: 1300px;
   display: flex;
   align-items: start;
-  flex: 1 1 400px;
+  flex: 1 1 500px;
 }
 
 .row {
@@ -61,7 +61,7 @@ h4:hover {
 }
 
 
-.image1 {
+.imageDesktop {
   width: 98%;
   margin: 0 auto;
 }
@@ -157,4 +157,44 @@ a:hover {
 
 .btn:hover {
   background: var(--Very-dark-blue);
+}
+
+.iconMenu{
+  display: none;
+}
+
+@media (max-width: 500px){ 
+
+  .container {
+    margin: auto;
+    max-width: 500px;
+  }
+
+  .col-8 {
+    flex: 1 0 0%;
+  }
+  .imageDesktop {
+      display: none;
+  }
+  .imageMovil {
+      display: block;
+      max-width: 400px;
+  }
+  .nota {
+    margin: 1rem;
+    color: var(--Off-white);
+    background: var(--Very-dark-blue);
+  }
+
+  
+}
+
+@media only screen and (min-width: 501px) {
+  .imageDesktop {
+      max-width: auto;
+      display: block;
+  }
+  .imageMovil {
+      display: none;
+  }
 }

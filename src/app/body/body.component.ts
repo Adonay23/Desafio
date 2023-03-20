@@ -8,21 +8,8 @@ import { Component } from '@angular/core';
 export class BodyComponent {
   
   imagen:String = "../assets/images/image-web-3-desktop.jpg";
-  size:number = 450;
+  imagenMovil:String = "../assets/images/image-web-3-mobile.jpg";
    
-
-
-
-  asignarImagen():String{
-    let imagen="";
-     if(this.size>400){
-      console.log('with mayor a 400px')
-     }else{
-
-     }
-     return imagen;
-  }
-
   
    
 
